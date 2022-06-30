@@ -20,6 +20,7 @@ export default function ListItem({menuList}) {
           )
         )
       }
+      <div className="tips">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实际产品以门店供应为准。</div>
     </Wrapper>
   )
 }

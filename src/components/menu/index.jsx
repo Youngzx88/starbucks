@@ -6,9 +6,10 @@ import {getMenuList} from '../../api/request'
 import ListItem from '../listitem'
 import EmptyItem from '../emptylist'
 
+
 export default function Menu() {
   const [loading,setLoading]=useState(false);
-  const [menuList,setMenuList] = useState([0])
+  const [menuList,setMenuList] = useState([])
   const [tab,setTab] = useState("全部")
 
   const Fn = (tab) =>{
@@ -30,6 +31,9 @@ export default function Menu() {
       {/* 过渡动画 */}
       {<Toast show={loading} icon="loading">加载中...</Toast>}
       {menuList.length>0 ? <ListItem menuList={menuList}/> : <EmptyItem/>}
+      <div className="frap">
+        <button id="featured-campaign-search" className="button_primary" rel="menu-search-overlay">搜索菜单</button>
+      </div>
     </Wrapper>
   )
 }

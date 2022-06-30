@@ -4,8 +4,6 @@ export const getMenuList = ({tab}) =>
   axios.get('https://www.fastmock.site/mock/5321bf649d06645c4266f3e0d45ae1cc/menu/all')
   .then ( list => {
     let remainlist=list.data;
-    // let result = orders;
-    // console.log(tab);
     if(tab){
         switch(tab) {
             case "全部":
