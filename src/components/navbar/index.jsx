@@ -3,10 +3,8 @@ import { Wrapper } from './style'
 
 export default function NavBar(props) {
   // 控制title的切换
-  const {Fn} = props
-  const [tab,setTab] = useState("全部")
+  const {tab,Fn} = props
   const changeTab = (tabname)=>{
-    setTab(tabname)
     Fn && Fn(tabname);
   }
 
