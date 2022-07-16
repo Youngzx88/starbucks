@@ -3,9 +3,10 @@ import { Wrapper } from './style'
 
 export default function NavBar(props) {
   // 控制title的切换
-  const {tab,Fn} = props
+  // 控制title的切换
+  const {tab,setTabDispatch} = props
   const changeTab = (tabname)=>{
-    Fn && Fn(tabname);
+    setTabDispatch(tabname)
   }
 
   return (
@@ -13,7 +14,6 @@ export default function NavBar(props) {
       <nav className='nav-title'>菜单</nav>
       <div className="tabs-wrapper">
         <ul className='subcategories'>
-          
           <li className={tab=="全部"?'active':""}  onClick={()=>changeTab("全部")}>全部</li>
           <li className={tab=="饮料"?'active':""} onClick={()=>changeTab("饮料")}>饮料</li>
           <li className={tab=="美食"?'active':""} onClick={()=>changeTab("美食")}>美食</li>

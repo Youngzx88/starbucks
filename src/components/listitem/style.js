@@ -24,7 +24,7 @@ export const GoodWrapper = styled.div`
   }
   img{
     width:8.0625rem;
-    height: calc(width);
+    height: 8.0625rem;
     box-shadow: 0 0.05rem 0.05rem 0.05rem rgb(0 0 0 / 12%);
     border-radius: 50%;
   }

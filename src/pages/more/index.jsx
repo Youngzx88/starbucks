@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function EmptyItem() {
+export default function More() {
   return (
     <div>
-      EmptyItem
+        More
     </div>
   )
 }

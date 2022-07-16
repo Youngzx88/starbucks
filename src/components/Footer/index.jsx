@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
 import classnames from 'classnames'
+import search from '../../pages/search'
 
 export default function Footer(props) {
     const { pathname } = useLocation()
+    useEffect(()=>{
+        
+    },[pathname])
     return (
-        <FooterWrapper>
+            pathname!="/search" && <FooterWrapper>
             <Link to="/home" className={classnames({active:pathname == '/home' || pathname == '/' })}>
                 {pathname == '/home' ? 
                     <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg" alt="" className='active'/>:

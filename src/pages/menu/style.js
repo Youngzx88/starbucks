@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  /* width: 18.75rem; */
   .frap {
     width: 5.7rem;
     height: 2.6rem;
     position: fixed;
-    right: 0.8rem;
+    /* right: 0.8rem; */
+    left: 12rem;
     bottom: 4.55rem;
     z-index: 996;
   }
