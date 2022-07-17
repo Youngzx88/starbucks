@@ -10,7 +10,7 @@ export default  memo(function SearchBox(props) {
   const {handleQuery} = props
   const [query,setQuery] = useState('')
 
-  //声明周期,一进这个页面就focus
+  //声明周期,一进这个页面就focus,增强用户体验
   useEffect(() => {
     queryRef.current.focus();
   }, [])

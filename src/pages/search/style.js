@@ -39,13 +39,13 @@ export const ShortcutWrapper = styled.div`
     width: 100%;
     display: ${props => props.show ? "" : "none"};
     h1{
-        width: 96px;
+        width: 4.8rem;
         box-sizing: border-box;
-        height: 30px;
+        height: 1.5rem;
         font-size: 14px;
-        margin-left: 24px;
-        padding: 2px 12px;
-        top: -20px;
+        margin-left: 1.2rem;
+        padding: 0.1rem 0.6rem;
+        top: -1rem;
         color: white;
         position: absolute;
         background-color: #00A862;
@@ -54,13 +54,13 @@ export const ShortcutWrapper = styled.div`
         font-weight: 400;
     }
     h2{
-        width: 300px;
+        width: 15rem;
         box-sizing: border-box;
-        height: 30px;
+        height: 1.5rem;
         font-size: 14px;
-        margin-left: 24px;
-        padding: 2px 12px;
-        top: -20px;
+        margin-left: 1.2rem;
+        padding: 0.1rem 0.6rem;
+        top: -1rem;
         color: black;
         position: absolute;
         line-height: 26px;
@@ -71,19 +71,23 @@ export const ShortcutWrapper = styled.div`
 export const HotKey = styled.div`
     position: absolute;
     h1{
-        width: 96px;
+        width: 4.8rem;
         box-sizing: border-box;
-        height: 30px;
+        height: 1.5rem;
         font-size: 14px;
-        margin-left: 24px;
-        padding: 2px 12px;
-        top: -20px;
+        margin-left: 1.2rem;
+        padding: 0.1rem 0.6rem;
+        top: -1rem;
         color: white;
         position: absolute;
         background-color: #00A862;
         line-height: 26px;
         text-align: center;
         font-weight: 400;
+    }
+    .hot{
+        display: flex;
+        flex: 1;
     }
 `
 export const GoodWrapper = styled.div`

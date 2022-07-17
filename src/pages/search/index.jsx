@@ -32,7 +32,7 @@ const handleQuery = (q) =>{
 }
 const renderHotKey = () =>{
     return (
-        <>  
+        <div>  
             {hotList.map((item)=>{
                 return (
                     <GoodWrapper key={item.id}>
@@ -48,7 +48,7 @@ const renderHotKey = () =>{
                     </GoodWrapper>
                 )
             })}
-        </>
+        </div>
     )
 }
 const renderSuggestLsit = () => {
@@ -96,7 +96,9 @@ return (
                 <Scroll>
                         <HotKey>
                             <h1 className="title">大家都在搜</h1>
-                            {renderHotKey()}
+                            <div className='hot'>
+                                {renderHotKey()}
+                            </div>
                         </HotKey>
                 </Scroll>
             </ShortcutWrapper>

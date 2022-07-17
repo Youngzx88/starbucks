@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
 import classnames from 'classnames'
-import search from '../../pages/search'
-
 export default function Footer(props) {
     const { pathname } = useLocation()
     useEffect(()=>{

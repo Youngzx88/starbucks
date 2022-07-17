@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo,useMemo} from 'react'
 import { Wrapper,GoodWrapper } from './style'
 import Lazyload from 'react-lazyload'
 import loading from '../../assets/img/loading.gif'
@@ -19,7 +19,7 @@ const Good = ({goodItem}) => (
   </GoodWrapper>
 )
 
-export default function ListItem({menuList,tab}) {
+export default memo(function ListItem({menuList,tab}) {
   return (
     <Scroll>
       <Wrapper>
@@ -34,4 +34,4 @@ export default function ListItem({menuList,tab}) {
       </Wrapper>
     </Scroll>
   )
-}
+})
